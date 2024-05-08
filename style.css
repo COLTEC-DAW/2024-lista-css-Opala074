@@ -63,4 +63,30 @@ footer a{
     border: 2px solid black;
     padding: 0.5em;
 }
-
+a{
+    color: red;
+    font-weight: bold;
+}
+a:hover{
+    background-color: aqua;
+    color: black;
+}
+a:visited{
+    font-weight: normal;
+    color: black;
+}
+.explanation p:first-of-type::first-letter{
+    font-size: 300%;
+    color: blue;
+    padding-right: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    float: left;
+}
+.design-selection{
+    position: absolute;
+    top: 22%;
+    left: 65%;
+}
+.explanation{
+    right: 70%;
+}
