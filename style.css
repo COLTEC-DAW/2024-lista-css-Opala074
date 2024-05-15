@@ -58,10 +58,15 @@ footer{
     background-color: beige;
     color: black;
     margin: 4%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
 }
 footer a{
     border: 2px solid black;
     padding: 0.5em;
+    flex-basis: 50px;
+    text-align: center;
 }
 .page-wrapper {
     position: relative;
@@ -114,4 +119,33 @@ a:visited{
 }
 .design-selection li:last-child{
     border-bottom: 1px solid black;
+}
+.benefits{
+    display: flex;
+    flex-direction: row-reverse;
+    border-top: #000000;
+    border-top-style: solid;
+}
+.benefits h3{
+    align-self: center;
+    flex-grow: 3;
+    flex: 0 1 30%;
+}
+.benefits p{
+    align-self: flex-start;
+    display: flex;
+    flex: 0 1 70%;
+}
+.participation{
+    border-bottom: #000000;
+    border-bottom-style: solid;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.participation h3{
+    flex: 0 1 50%;
+    align-self: center;
+}
+.participation *{
+    flex: 0 1 50%;
 }
