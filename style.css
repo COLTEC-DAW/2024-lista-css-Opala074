@@ -5,7 +5,6 @@ header{
     background-color:black;
     color: white;
     overflow: hidden;
-    ;
 }
 h1{
     text-align: center;
@@ -78,6 +77,7 @@ footer a{
     border-right-width: 1px;
     border-color: #1f295c;
     padding-right: 2%;
+    right: 70%;
 }
 .design-selection {
     position: absolute;
@@ -109,9 +109,6 @@ a:visited{
     position: absolute;
     top: 22%;
     left: 65%;
-}
-.explanation{
-    right: 70%;
 }
 .design-selection li{
     border-top: 1px solid black;
@@ -148,4 +145,38 @@ a:visited{
 }
 .participation *{
     flex: 0 1 50%;
+}
+@media screen and (max-width:768px){
+    body * {
+        font-size: 12px;
+    }
+    /* Remover o reposicionamento */
+    .design-selection {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    .explanation {
+        border-right: none;
+        right: 0;
+        width: 100%;
+    }
+    .participation {
+        flex-direction: column;
+    }
+    #zen-summary p {
+        line-height: normal;
+    }
+    header {
+        height: auto;
+    }
+}
+@media print {
+    body * {
+        font-family: times, serif;
+    }
+    header {
+        background-color: white;
+        color: black;
+    }
 }
