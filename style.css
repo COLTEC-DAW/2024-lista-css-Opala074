@@ -1,0 +1,182 @@
+header{
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:black;
+    color: white;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    float: left;
+    margin-right: 1em;
+    margin-left: 1em
+}
+h2{
+    text-align: center;
+    font-size: 1.4rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+body{
+    font-family:sans-serif ;
+    background-color: wheat;
+    color: purple;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+p{
+    margin: 1em;
+}
+.summary{
+    text-align: center;
+}
+#zen-summary p{
+   line-height: 1.5;
+    
+}
+abbr{
+    font-family: small-caps;
+}
+.intro{
+    height: 550px;
+}
+#design-archives{
+    display: none;
+    
+}
+li{
+    list-style: none;
+    margin-bottom: 1em;
+    text-align: center;
+}
+footer{
+    background-color: beige;
+    color: black;
+    margin: 4%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+footer a{
+    border: 2px solid black;
+    padding: 0.5em;
+    flex-basis: 50px;
+    text-align: center;
+}
+.page-wrapper {
+    position: relative;
+}
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-color: #1f295c;
+    padding-right: 2%;
+    right: 70%;
+}
+.design-selection {
+    position: absolute;
+    left: 65%;
+    bottom: 55%;
+    padding: 2%;
+}
+a{
+    color: red;
+    font-weight: bold;
+}
+a:hover{
+    background-color: aqua;
+    color: black;
+}
+a:visited{
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+.explanation p:first-of-type::first-letter{
+    font-size: 300%;
+    color: blue;
+    padding-right: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    float: left;
+}
+.design-selection{
+    position: absolute;
+    top: 22%;
+    left: 65%;
+}
+.design-selection li{
+    border-top: 1px solid black;
+
+}
+.design-selection li:last-child{
+    border-bottom: 1px solid black;
+}
+.benefits{
+    display: flex;
+    flex-direction: row-reverse;
+    border-top: #000000;
+    border-top-style: solid;
+}
+.benefits h3{
+    align-self: center;
+    flex-grow: 3;
+    flex: 0 1 30%;
+}
+.benefits p{
+    align-self: flex-start;
+    display: flex;
+    flex: 0 1 70%;
+}
+.participation{
+    border-bottom: #000000;
+    border-bottom-style: solid;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.participation h3{
+    flex: 0 1 50%;
+    align-self: center;
+}
+.participation *{
+    flex: 0 1 50%;
+}
+@media screen and (max-width:768px){
+    body * {
+        font-size: 12px;
+    }
+    /* Remover o reposicionamento */
+    .design-selection {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    .explanation {
+        border-right: none;
+        right: 0;
+        width: 100%;
+    }
+    .participation {
+        flex-direction: column;
+    }
+    #zen-summary p {
+        line-height: normal;
+    }
+    header {
+        height: auto;
+    }
+}
+@media print {
+    body * {
+        font-family: times, serif;
+    }
+    header {
+        background-color: white;
+        color: black;
+    }
+}
